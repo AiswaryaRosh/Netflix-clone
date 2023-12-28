@@ -1,6 +1,15 @@
 # Getting Started with Create React App
 -Created react app
 -Installed tailwindcss
+-header
+routing
+login
+sign up
+form validation
+useRef hook
+firebase setup
+deploying app to production
+create a signup account
 
 
 # Features
