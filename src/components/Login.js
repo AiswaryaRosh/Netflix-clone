@@ -6,6 +6,7 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfi
 import { auth } from '../utils/firebase';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
+import { LOGIN_PAGE_BACKGROUND_URL, USER_AVATAR } from '../utils/constants';
 
 
 const Login = () => {
@@ -29,7 +30,7 @@ const Login = () => {
           const user = userCredential.user;
           updateProfile(auth.currentUser, {
             displayName: name.current.value,
-            photoURL: "https://lh3.googleusercontent.com/a/ACg8ocIK-gKqiOFvj94u0RqOASdgJJyjfWye96qX5CdB43UVLg=s83-c-mo"
+            photoURL: USER_AVATAR
           }).then(() => {
             // Profile updated!
             const { uid, email, displayName, photoURL } = auth.currentUser;
@@ -71,7 +72,7 @@ const Login = () => {
   <div>
     <Header/>
     <div className='absolute w-full'>
-      <img className="h-screen w-full" src="https://assets.nflxext.com/ffe/siteui/vlv3/563192ea-ac0e-4906-a865-ba9899ffafad/6b2842d1-2339-4f08-84f6-148e9fcbe01b/IN-en-20231218-popsignuptwoweeks-perspective_alpha_website_small.jpg"
+      <img className="h-screen w-full" src={LOGIN_PAGE_BACKGROUND_URL}
       alt='img'/>
     </div>
     <form className='absolute w-full md:w-3/12 p-12 bg-black my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80' onSubmit={(e)=>e.preventDefault()}>

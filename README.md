@@ -14,7 +14,9 @@ implemnt sign in user api
 created redux store with userSlice
 Implemented sign out
 update profile API call
--
+-BugFix: Sign up user displayName and profile picture update
+-BugFix: If the user is not logged in Redirect / Browsw to login page vice versa
+-Unsubscribed to the onAuthStateChanged callback
 
 
 
