@@ -12,6 +12,10 @@ deploying app to production
 create a signup account
 implemnt sign in user api
 created redux store with userSlice
+Implemented sign out
+update profile API call
+-
+
 
 
 # Features
