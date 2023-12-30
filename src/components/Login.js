@@ -4,13 +4,11 @@ import { useState, useRef } from 'react';
 import { checkValidateData } from '../utils/validate';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile   } from "firebase/auth";
 import { auth } from '../utils/firebase';
-import { useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
 
 
 const Login = () => {
-  const navigate = useNavigate();
   const dispatch = useDispatch()
   const [isLoginForm, setisLoginForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
@@ -43,13 +41,10 @@ const Login = () => {
                   photoURL: photoURL,
                 })
               );
-              navigate("/browse");
           }).catch((error) => {
             // An error occurred
             // ...
           });
-          navigate("/")
-          
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -63,13 +58,11 @@ const Login = () => {
           // Signed in
           const user = userCredential.user;
           console.log(user);
-          navigate("/browse")
         })
         .catch((error) => {
           const errorCode = error.code;
           const errorMessage = error.message;
           setErrorMessage(errorCode+":"+errorMessage);
-          navigate("/")
         });
     }
 
