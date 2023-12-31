@@ -20,6 +20,14 @@ update profile API call
 -Add hardcoded values to the constant file
 -Register TMDB API & create an app & get access token
 -Get Data from TMDB now playing movies list API
+-Created custom hook for now playing movies
+-created movieslice
+-Updated store with movies data
+-Planning for primary container and secondarey container
+-Fetch data for trailer video
+-Update store with Trailer Data
+-Embedded the youtube video and make it autoplay and mute
+-Added tailwind classes to make main container look awseome
 
 
 

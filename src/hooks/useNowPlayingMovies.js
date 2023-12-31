@@ -11,6 +11,7 @@ const useNowPlayingMovies = () => {
       API_OPTIONS
     );
     const json = await res.json();
+    console.log('json.results---', json.results)
     dispath(addNowPlayingMovies(json.results));
   };
   useEffect(() => {
