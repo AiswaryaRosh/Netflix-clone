@@ -11,3 +11,9 @@ export const API_OPTIONS = {
   };
 
 export const MOVIE_CARD_URL = "https://image.tmdb.org/t/p/w200/";
+
+export const LANGUAGE_OPTIONS = [
+  {displayName: 'English', value: 'en'},
+  {displayName: 'Hindi', value: 'hindi'},
+  {displayName: 'Spanish', value: 'spanish'}
+]
