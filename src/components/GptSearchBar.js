@@ -4,7 +4,6 @@ import { useSelector } from 'react-redux'
 
 const GptSearchBar = () => {
   const selectedLanguage = useSelector((store) => store.config.lang);
-  console.log('selectedLanguage---', selectedLanguage)
   return (
     <div className='pt-[20%] flex justify-center'>
         <form className='w-1/2 bg-black flex items-baseline'>

@@ -17,7 +17,6 @@ const Header = () => {
   // Subscribe to the store and get user
   const user = useSelector(store=>store.user);
   const showGptSearch = useSelector(store => store.gpt.showGptSearch);
-  console.log('user', user)
   const dispatch = useDispatch();
   const handleGptSearchClick = () => {
     dispatch(toggleGptSearchView())

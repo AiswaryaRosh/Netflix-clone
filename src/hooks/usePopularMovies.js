@@ -11,7 +11,6 @@ const usePopularMovies = () => {
       API_OPTIONS
     );
     const json = await res.json();
-    console.log('json.results---', json.results)
     dispath(addPopularMovies(json.results));
   };
   useEffect(() => {

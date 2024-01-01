@@ -11,7 +11,6 @@ const useTopRatedMovies = () => {
       API_OPTIONS
     );
     const json = await res.json();
-    console.log('json.results---', json.results)
     dispath(addTopRatedMovies(json.results));
   };
   useEffect(() => {
