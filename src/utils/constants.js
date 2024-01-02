@@ -16,4 +16,6 @@ export const LANGUAGE_OPTIONS = [
   {displayName: 'English', value: 'en'},
   {displayName: 'Hindi', value: 'hindi'},
   {displayName: 'Spanish', value: 'spanish'}
-]
+];
+
+export const OPEN_PLATFORM_API_KEYS = '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';

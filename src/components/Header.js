@@ -60,7 +60,7 @@ const Header = () => {
       <div className='flex flex-row gap-x-2'>
         {showGptSearch && (<select className='flex m-6 px-6 bg-gray-600 text-white' onChange={handleLanguageChange}>
           {
-            LANGUAGE_OPTIONS.map((language) => <option value={language.value}>{language.displayName}</option>)
+            LANGUAGE_OPTIONS.map((language) => <option key={language.value} value={language.value}>{language.displayName}</option>)
           }
         </select>)}
         <button className="py-2 px-4 mx-5 my-5 bg-purple-800 text-white rounded-lg"
