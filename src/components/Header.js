@@ -54,8 +54,8 @@ const Header = () => {
     
   }
   return (
-    <div className='absolute px-8 py-2 bg-gradient-to-b from-black w-screen z-10 flex justify-between'>
-      <img className="w-44" src={NETFLIX_LOGO_URL} alt='img' />
+    <div className='absolute px-8 py-2 bg-gradient-to-b from-black w-screen z-10 flex md:justify-between sm:bg-blue-900 md:bg-green-900'>
+      <img className="w-44 mx-auto md:mx-0" src={NETFLIX_LOGO_URL} alt='img' />
       {user && (
       <div className='flex flex-row gap-x-2'>
         {showGptSearch && (<select className='flex m-6 px-6 bg-gray-600 text-white' onChange={handleLanguageChange}>
